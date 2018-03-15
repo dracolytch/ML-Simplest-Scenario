@@ -1,0 +1,29 @@
+### General parameters
+max_steps = 5e5 # Set maximum number of steps to run environment.
+run_path = "simplestScenarioGravity-Pass3" # The sub-directory name for model and summary statistics
+env_name = "simplestScenarioGravity" # Name of the training environment file.
+load_model = False # Whether to load a saved model.
+train_model = True # Whether to train the model.
+summary_freq = 2500 # Frequency at which to save training statistics.
+save_freq = 50000 # Frequency at which to save model.
+curriculum_file = None
+
+### Algorithm-specific parameters for tuning
+batch_size = 1000 # How many experiences per gradient descent update step, fractino of buffer size
+buffer_size = 5000 # How large the experience buffer should be before gradient descent.
+epsilon = 0.2 # Acceptable threshold around ratio of old and new policy probabilities. Usually 0.1 - 0.3
+hidden_units = 64 # Number of units in hidden layer.
+learning_rate = 2e-4 # Model learning rate.
+num_epoch = 5 # Number of gradient descent steps per batch of experiences.
+time_horizon = 512 # How many steps to collect per agent before adding to buffer. Usually 64-2048
+gamma = 0.99 # Reward discount rate.
+lambd = 0.95 # Lambda parameter for GAE.
+beta = 1e-3 # Strength of entropy regularization
+num_layers = 2 # Number of hidden layers between state/observation encoding and value/policy layers.
+normalize = False
+
+### Logging dictionary for hyperparameters
+hyperparameter_dict = {'max_steps':max_steps, 'run_path':run_path, 'env_name':env_name,
+    'curriculum_file':curriculum_file, 'gamma':gamma, 'lambd':lambd, 'time_horizon':time_horizon,
+    'beta':beta, 'num_epoch':num_epoch, 'epsilon':epsilon, 'buffe_size':buffer_size,
+    'learning_rate':learning_rate, 'hidden_units':hidden_units, 'batch_size':batch_size}
