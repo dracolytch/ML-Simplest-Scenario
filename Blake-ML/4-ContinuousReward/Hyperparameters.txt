@@ -1,7 +1,7 @@
 ### General parameters
 max_steps = 5e5 # Set maximum number of steps to run environment.
-run_path = "simplestScenarioGravity-Pass3" # The sub-directory name for model and summary statistics
-env_name = "simplestScenarioGravity" # Name of the training environment file.
+run_path = "simplestScenario3a-errorSquared-Pass2" # The sub-directory name for model and summary statistics
+env_name = "simplestScenario3a-errorSquared-P2" # Name of the training environment file.
 load_model = False # Whether to load a saved model.
 train_model = True # Whether to train the model.
 summary_freq = 2500 # Frequency at which to save training statistics.
