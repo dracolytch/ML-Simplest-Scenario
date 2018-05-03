@@ -1,0 +1,11 @@
+{
+    "measure" : "reward",
+    "min_lesson_length" : 15,
+    "signal_smoothing" : true, 
+	"thresholds" : [20, 20, 20],
+    "parameters" : 
+    {
+        "DistanceScale" :     [0.1, 0.2, 0.3, 0.4],
+		"OnCollisionPoints" : [ -10,  -10,  -10,  -10]
+    }
+}
