@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using MLAgents;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,6 +28,7 @@ public class EnvironmentDuplicator : MonoBehaviour {
                 var agentScript = env.GetComponentInChildren<Agent>();
                 agentScript.GiveBrain(BrainToUse);
                 Cursor.x += ColSpacing;
+                env.SetActive(true);
             }
 
             Cursor.x = ColSpacing * Cols * -0.5f;
