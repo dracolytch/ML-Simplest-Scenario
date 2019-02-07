@@ -1,0 +1,13 @@
+#The following should be in your ml-agents\config\trainer_config.yaml file
+
+GravityBrain:
+    max_steps: 2.5e5 #250,000
+    time_horizon: 512
+    beta: 1.0e-3
+    num_epoch: 5
+    buffer_size: 5000
+    hidden_units: 64
+    batch_size: 1000
+    buffer_size: 5000
+    summary_freq: 2500
+    learning_rate: 2.0e-4
