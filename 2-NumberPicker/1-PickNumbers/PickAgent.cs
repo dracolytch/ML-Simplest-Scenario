@@ -32,7 +32,7 @@ public class PickAgent : Agent {
         var choice = (int)vectorAction[0];
         var rew = 0f;
         if (choice == 1f) rew = 1f;
-        //Debug.Log("Reward:" + rew);
+        Debug.Log("Reward:" + rew);
         AddReward(rew);
         numbers = Shuffle(numbers); // shuffle test
     }

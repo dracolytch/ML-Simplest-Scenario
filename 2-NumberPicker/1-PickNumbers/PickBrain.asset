@@ -12,11 +12,12 @@ MonoBehaviour:
   m_Name: PickBrain
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 20
+    vectorObservationSize: 10
     numStackedVectorObservations: 1
     vectorActionSize: 14000000
     cameraResolutions: []
     vectorActionDescriptions:
     - 
     vectorActionSpaceType: 0
-  model: {fileID: 0}
+  model: {fileID: 11400000, guid: c6c8e4eee69b09b4ebcfc14585837161, type: 3}
+  inferenceDevice: 0
