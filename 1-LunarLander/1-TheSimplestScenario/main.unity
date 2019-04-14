@@ -158,6 +158,7 @@ MonoBehaviour:
   brain: {fileID: 11400000, guid: ba4204f274174ab4ba757a1cc38d1bb5, type: 2}
   agentParameters:
     agentCameras: []
+    agentRenderTextures: []
     maxStep: 0
     resetOnDone: 1
     onDemandDecision: 0
