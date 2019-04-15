@@ -1,6 +1,4 @@
 ﻿using MLAgents;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ViewAgent : Agent
@@ -18,10 +16,22 @@ public class ViewAgent : Agent
     {
         var discreteAction = (int)vectorAction[0];
         //Debug.Log(discreteAction);
-        if (discreteAction == 1 && subject.activeInHierarchy == true) AddReward(correctReward);
-        if (discreteAction == 1 && subject.activeInHierarchy == false) AddReward(wrongPenalty);
-        if (discreteAction == 0 && subject.activeInHierarchy == true) AddReward(wrongPenalty);
-        if (discreteAction == 0 && subject.activeInHierarchy == false) AddReward(correctReward);
+        if (discreteAction == 1 && subject.activeInHierarchy == true) Correct(true);
+        if (discreteAction == 1 && subject.activeInHierarchy == false) Incorrect(true);
+        if (discreteAction == 0 && subject.activeInHierarchy == true) Incorrect(false);
+        if (discreteAction == 0 && subject.activeInHierarchy == false) Correct(false);
+    }
+
+    void Correct(bool action)
+    {
+        AddReward(correctReward);
+        Debug.Log("Correct: " + action + " when " + action);
+    }
+
+    void Incorrect(bool action)
+    {
+        AddReward(wrongPenalty);
+        Debug.Log("Incorrect: " + action + " when " + !action);
     }
 
     public override void AgentReset()
