@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: d03a919676ec3d247a902873a610d823
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400002: Assets/3-Observations/2-2DTarget/ImprovedWinCondition.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

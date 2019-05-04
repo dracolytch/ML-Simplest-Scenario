@@ -123,7 +123,6 @@ GameObject:
   - component: {fileID: 11954465}
   - component: {fileID: 11954464}
   - component: {fileID: 11954463}
-  - component: {fileID: 11954462}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -131,18 +130,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &11954462
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 11954461}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &11954463
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -373,7 +360,6 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c790bd5eed6018440910f93e37ee0618, type: 2}
     _brainsToControl:
     - {fileID: 11400000, guid: ae00dd475a6299a4796eb8d7a28ed863, type: 2}
-    - {fileID: 11400000, guid: c790bd5eed6018440910f93e37ee0618, type: 2}
   maxSteps: 10
   trainingConfiguration:
     width: 80
@@ -448,6 +434,7 @@ MonoBehaviour:
   agentParameters:
     agentCameras:
     - {fileID: 1364232242}
+    agentRenderTextures: []
     maxStep: 10
     resetOnDone: 1
     onDemandDecision: 0
