@@ -375,29 +375,30 @@ MonoBehaviour:
   WidthMinMax: {x: -5, y: 5}
   MarkerSpeed: 1
   TotalPenaltyOverMaxSteps: -10
-  SuccessReward: 5
+  SuccessReward: 10
   RewardCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: -1
+      time: -0.00018692017
+      value: 0.9977672
+      inSlope: -1.4260833
+      outSlope: -1.4260833
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.14430697
     - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: -1
-      outSlope: 0
+      time: 0.9880469
+      value: 0.0047454834
+      inSlope: -0.49406907
+      outSlope: -0.49406907
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.12861416
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  RewardCurveScale: 0.1
   debug: 0

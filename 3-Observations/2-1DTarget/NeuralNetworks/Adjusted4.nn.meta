@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: e783013c647191d44afb0a62c51171ab
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/3-Observations/2-1DTarget/NeuralNetworks/Adjusted4.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

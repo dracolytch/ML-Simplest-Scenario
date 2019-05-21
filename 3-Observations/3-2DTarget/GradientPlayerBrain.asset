@@ -8,19 +8,33 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b23992c8eb17439887f5e944bf04a40, type: 3}
-  m_Name: GradientLearningBrain
+  m_Script: {fileID: 11500000, guid: 41e9bda8f3cf1492fa74926a530f6f70, type: 3}
+  m_Name: GradientPlayerBrain
   m_EditorClassIdentifier: 
   brainParameters:
     vectorObservationSize: 0
     numStackedVectorObservations: 1
-    vectorActionSize: 01000000
+    vectorActionSize: 02000000
     cameraResolutions:
     - width: 84
       height: 84
       blackAndWhite: 1
     vectorActionDescriptions:
     - xMovement
+    - xMovement
     vectorActionSpaceType: 1
-  model: {fileID: 11400000, guid: a1f6fb02b4602ef4ba7540036848645a, type: 3}
-  inferenceDevice: 0
+  keyContinuousPlayerActions:
+  - key: 275
+    index: 0
+    value: 1
+  - key: 276
+    index: 0
+    value: -1
+  - key: 273
+    index: 1
+    value: 1
+  - key: 274
+    index: 1
+    value: -1
+  axisContinuousPlayerActions: []
+  discretePlayerActions: []

@@ -1,7 +1,8 @@
 ﻿using MLAgents;
 using UnityEngine;
 
-public class GradientObservation2DAgent : Agent {
+public class GradientObservationAgent : Agent
+{
 
     public GameObject Marker;
     public GameObject Target;
@@ -18,22 +19,23 @@ public class GradientObservation2DAgent : Agent {
     public override void InitializeAgent()
     {
         TotalWidth = WidthMinMax.y - WidthMinMax.x;
+        TotalWidth = Mathf.Sqrt(2) * TotalWidth; // Farthest distance is from corner to corner
     }
 
     // How to reinitialize when the game is reset. The Start() of an ML Agent
     public override void AgentReset()
     {
-        Marker.transform.position = Marker.transform.parent.position + new Vector3(Random.Range(WidthMinMax.x, WidthMinMax.y), Marker.transform.position.y, 0);
-        Target.transform.position = Marker.transform.parent.position + new Vector3(Random.Range(WidthMinMax.x, WidthMinMax.y), Marker.transform.position.y, 0);
+        Marker.transform.position = Marker.transform.parent.position + new Vector3(Random.Range(WidthMinMax.x, WidthMinMax.y), Marker.transform.position.y, Random.Range(WidthMinMax.x, WidthMinMax.y));
+        Target.transform.position = Marker.transform.parent.position + new Vector3(Random.Range(WidthMinMax.x, WidthMinMax.y), Marker.transform.position.y, Random.Range(WidthMinMax.x, WidthMinMax.y));
     }
 
     public override void AgentAction(float[] vectorAction, string textAction)
     {
-        var action = Mathf.Clamp(vectorAction[0], -1f, 1f);
+        var action = new Vector3(Mathf.Clamp(vectorAction[0], -1f, 1f), 0, Mathf.Clamp(vectorAction[1], -1f, 1f));
         if (debug) Debug.Log("action: " + action);
 
         var startingDistance = Vector3.Distance(Marker.transform.position, Target.transform.position) / TotalWidth;
-        Marker.transform.Translate(action * Time.deltaTime, 0, 0);
+        Marker.transform.Translate(action * Time.deltaTime);
         var dist = Vector3.Distance(Marker.transform.position, Target.transform.position) / TotalWidth;
         if (dist < winDistance)
         {
