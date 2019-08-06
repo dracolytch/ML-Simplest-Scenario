@@ -1,8 +1,10 @@
 ﻿using MLAgents;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class GradientObservationAgent : Agent
-{
+public class GradientNormalAgentt : Agent {
+
     public GameObject Marker;
     public GameObject Target;
     public Vector2 WidthMinMax = new Vector2(-5, 5);
@@ -23,6 +25,12 @@ public class GradientObservationAgent : Agent
     Vector2 zBoundsMinMax;
 
     int currentStep = 0;
+
+    public override void CollectObservations()
+    {
+        AddVectorObs(Marker.transform.position - transform.parent.position);
+        AddVectorObs(Target.transform.position - transform.parent.position);
+    }
 
     public override void InitializeAgent()
     {

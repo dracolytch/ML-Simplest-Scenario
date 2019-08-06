@@ -9,19 +9,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b23992c8eb17439887f5e944bf04a40, type: 3}
-  m_Name: GradientLearningBrain
+  m_Name: NoObsLearningBrain
   m_EditorClassIdentifier: 
   brainParameters:
-    vectorObservationSize: 0
+    vectorObservationSize: 6
     numStackedVectorObservations: 1
     vectorActionSize: 02000000
-    cameraResolutions:
-    - width: 84
-      height: 84
-      blackAndWhite: 1
+    cameraResolutions: []
     vectorActionDescriptions:
     - xMovement
-    - zMovement
+    - yMovement
     vectorActionSpaceType: 1
-  model: {fileID: 11400000, guid: ba6d7a94453cc4d4b817affe1fdef1a5, type: 3}
+  model: {fileID: 11400002, guid: 472e766d0688dfc4aa664e9900fb3994, type: 3}
   inferenceDevice: 0

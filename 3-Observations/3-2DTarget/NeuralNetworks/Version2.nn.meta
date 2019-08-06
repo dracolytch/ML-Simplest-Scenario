@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 7ee1f5475e6c293408d9db1c2aaf9ba2
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/3-Observations/3-2DTarget/NeuralNetworks/Version2.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
