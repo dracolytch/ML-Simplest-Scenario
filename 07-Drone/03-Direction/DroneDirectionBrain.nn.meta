@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: cacc93e6e0f20824e810316961a3915b
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400000: Assets/07-Drone/03-Direction/DroneDirectionBrain.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}

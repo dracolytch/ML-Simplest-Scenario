@@ -1,0 +1,1922 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0.43671042, g: 0.48431307, b: 0.56456304, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 11
+  m_GIWorkflowMode: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 1
+  m_LightmapEditorSettings:
+    serializedVersion: 10
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
+  m_LightingDataAsset: {fileID: 0}
+  m_UseShadowmask: 0
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1001 &100578593
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &190784993
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &242983105
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &272990660
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.719999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (29)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &278782478
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &319011952
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.719999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &336953595
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &343174943
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &452677608
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &456052249
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (30)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &512932047
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &521257280
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 12.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &607659416
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 12.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &738511519
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &781623525
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &812918720
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &932107523
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &965302389
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 12.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1120362263
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1139565623
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1208855594
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1211361598
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1397918840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1397918845}
+  - component: {fileID: 1397918844}
+  - component: {fileID: 1397918843}
+  - component: {fileID: 1397918842}
+  - component: {fileID: 1397918841}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1397918841
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397918840}
+  m_Enabled: 1
+--- !u!124 &1397918842
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397918840}
+  m_Enabled: 1
+--- !u!92 &1397918843
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397918840}
+  m_Enabled: 1
+--- !u!20 &1397918844
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397918840}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1397918845
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1397918840}
+  m_LocalRotation: {x: -0.22028707, y: -0.2568737, z: 0.060250968, w: -0.93907374}
+  m_LocalPosition: {x: -0.007621765, y: 1.703681, z: -1.5888596}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 14.45, y: 0, z: 0}
+--- !u!1001 &1413094125
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.719999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1474527351
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 22.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1498863820
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1539980931
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 12.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1613909450
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 9.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1671711384
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 18.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1688210686
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 3.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &1784925823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1784925825}
+  - component: {fileID: 1784925824}
+  m_Layer: 0
+  m_Name: GenericAcademy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1784925824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1784925823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29828e3c4d92044db60cb85856c2f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  broadcastHub:
+    broadcastingBrains:
+    - {fileID: 11400000, guid: 51ab003b4a3a7784e8217ae72082a3a1, type: 2}
+    _brainsToControl:
+    - {fileID: 11400000, guid: e5f310cb24609ea4c869732dc4648de3, type: 2}
+  maxSteps: 0
+  trainingConfiguration:
+    width: 80
+    height: 80
+    qualityLevel: 1
+    timeScale: 100
+    targetFrameRate: -1
+  inferenceConfiguration:
+    width: 1280
+    height: 720
+    qualityLevel: 5
+    timeScale: 1
+    targetFrameRate: 60
+  resetParameters:
+    resetParameters: []
+--- !u!4 &1784925825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1784925823}
+  m_LocalRotation: {x: -0.06975647, y: 0, z: 0, w: 0.9975641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 0.19999993, z: 5}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: -8, y: 0, z: 0}
+--- !u!1001 &1819675737
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 6.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1824324298
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 9.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1001 &1910792964
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 15.719999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4049886302581972, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_Name
+      value: DroneFlightContinuous (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227352864411838, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 85933bde410a70e4b9c8ee24d82b8bda, type: 2}
+  m_IsPrefabAsset: 0
+--- !u!1 &2063801192
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2063801194}
+  - component: {fileID: 2063801193}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &2063801193
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063801192}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 27.9
+  m_SpotAngle: 74.8
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!4 &2063801194
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2063801192}
+  m_LocalRotation: {x: 0.667038, y: 0.2018096, z: -0.19505551, w: 0.6901352}
+  m_LocalPosition: {x: 0, y: 15.8, z: -15.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 88.05, y: 32.6, z: 0}
