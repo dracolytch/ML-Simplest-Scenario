@@ -1,0 +1,10 @@
+fileFormatVersion: 2
+guid: 17ad6f61d03a801488572bae0a4e40a3
+ScriptedImporter:
+  fileIDToRecycleName:
+    11400002: Assets/7-Drone/05-Stable/Stable3-neg04.nn
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 83221ad3db87f4b3b91b041047cb2bc5, type: 3}
