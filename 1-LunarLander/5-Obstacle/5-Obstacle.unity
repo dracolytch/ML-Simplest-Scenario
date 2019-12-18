@@ -50,12 +50,11 @@ LightmapSettings:
     m_BounceScale: 1
     m_IndirectOutputScale: 1
     m_AlbedoBoost: 1
-    m_TemporalCoherenceThreshold: 1
     m_EnvironmentLightingMode: 0
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 1
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -63,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -77,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -88,7 +94,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -114,1022 +121,1001 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &10998166
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1001 &65081029
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.072
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1001 &71067969
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1001 &95515623
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1001 &124355056
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &146667774
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.213
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 31
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (28)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &178003390
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (5)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &202806723
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.184
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 27
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (24)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &223672811
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &308841767
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.17
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.091
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 33
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (30)
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &353865784
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &146667774
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
-      value: GravityGameObstacle (3)
+      value: GravityGameObstacle (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &539400625
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.184
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 29
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (26)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &559115766
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.213
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (19)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &570523595
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.153
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (11)
+      value: 31
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &689818379
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &178003390
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
-      value: GravityGameObstacle (12)
+      value: GravityGameObstacle (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &753380285
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.043
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (7)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &792336342
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.072
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (13)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &963111106
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.141
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (16)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1028168161
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 2.029
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (10)
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1031033934
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &202806723
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.072
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (24)
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 2.062
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (14)
+      value: 27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1110687033
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &223672811
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 3.072
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.153
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (9)
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1393908422
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &308841767
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.141
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (30)
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 33
       objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &353865784
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &539400625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &559115766
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &570523595
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &689818379
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &753380285
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &792336342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &963111106
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1028168161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.029
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1031033934
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1110687033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.072
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1393908422
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1 &1397918840
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1397918845}
@@ -1148,34 +1134,40 @@ GameObject:
 AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397918840}
   m_Enabled: 1
 --- !u!124 &1397918842
 Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397918840}
   m_Enabled: 1
 --- !u!92 &1397918843
 Behaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397918840}
   m_Enabled: 1
 --- !u!20 &1397918844
 Camera:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397918840}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
   m_FocalLength: 50
@@ -1209,7 +1201,8 @@ Camera:
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397918840}
   m_LocalRotation: {x: -0.11996862, y: 0.5457127, z: -0.0793038, w: -0.8255399}
   m_LocalPosition: {x: 9.454175, y: 1.0750918, z: 0.07197351}
@@ -1219,148 +1212,146 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 14.45, y: 0, z: 0}
 --- !u!1001 &1427744849
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 1.043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1733260306
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.043
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1744360871
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.141
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.153
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1733260306
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1744360871
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1 &1784925823
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1784925825}
@@ -1376,37 +1367,34 @@ GameObject:
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784925823}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c29828e3c4d92044db60cb85856c2f9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  broadcastHub:
-    broadcastingBrains:
-    - {fileID: 11400000, guid: 0f071a4a1a028694391b6a546c2371cf, type: 2}
-    _brainsToControl: []
-  maxSteps: 250
-  trainingConfiguration:
+  m_TrainingConfiguration:
     width: 80
     height: 80
     qualityLevel: 1
     timeScale: 100
     targetFrameRate: -1
-  inferenceConfiguration:
+  m_InferenceConfiguration:
     width: 1280
     height: 720
     qualityLevel: 5
     timeScale: 1
     targetFrameRate: 60
   resetParameters:
-    resetParameters: []
+    m_ResetParameters: []
 --- !u!4 &1784925825
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1784925823}
   m_LocalRotation: {x: -0.06975647, y: 0, z: 0, w: 0.9975641}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -1416,328 +1404,338 @@ Transform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -8, y: 0, z: 0}
 --- !u!1001 &1796568554
-Prefab:
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.213
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1804335684
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 5.184
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (25)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1929847143
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 4.141
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 1.091
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (23)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1972976411
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1987123308
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.213
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3
+      value: 1.091
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_Name
-      value: GravityGameObstacle (31)
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &1995518973
-Prefab:
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1804335684
+PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 6.17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 2.062
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-      propertyPath: m_RootOrder
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
-      value: GravityGameObstacle (27)
+      value: GravityGameObstacle (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
---- !u!1001 &2031970350
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.184
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.153
+      value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 28
       objectReference: {fileID: 0}
-    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1929847143
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.141
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1972976411
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1987123308
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.213
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &1995518973
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_Name
+      value: GravityGameObstacle (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.062
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+--- !u!1001 &2031970350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1127162328580302, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
       propertyPath: m_Name
       value: GravityGameObstacle (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.184
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.153
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4013569286622864, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 2}
-  m_IsPrefabAsset: 0
+  m_SourcePrefab: {fileID: 100100000, guid: b9d601e4d6a6b3e4988217ab068913c1, type: 3}
 --- !u!1 &2063801192
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2063801194}
@@ -1753,15 +1751,17 @@ GameObject:
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063801192}
   m_Enabled: 1
-  serializedVersion: 8
+  serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 27.9
   m_SpotAngle: 74.8
+  m_InnerSpotAngle: 57.579865
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -1771,6 +1771,24 @@ Light:
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
   m_Flare: {fileID: 0}
@@ -1778,19 +1796,23 @@ Light:
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+  m_RenderingLayerMask: 1
   m_Lightmapping: 4
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &2063801194
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2063801192}
   m_LocalRotation: {x: 0.667038, y: 0.2018096, z: -0.19505551, w: 0.6901352}
   m_LocalPosition: {x: 0, y: 15.8, z: -15.2}

@@ -14,9 +14,12 @@ namespace TheSimplestScenario
         public float MarkerSpeed = 0.02f;
         public float DistanceToEarnReward = 0.1f;
         public float OnMarkerPoints = 0.1f;
+        public BehaviorParameters behaviorParams;
 
         public override void InitializeAgent()
         {
+            if (behaviorParams == null) behaviorParams = GetComponent<BehaviorParameters>();
+            if (behaviorParams == null) Debug.LogError("Behavior params missing");
         }
 
         // How to reinitialize when the game is reset. The Start() of an ML Agent
@@ -33,10 +36,10 @@ namespace TheSimplestScenario
         }
 
         // What to do every step. The Update() of an ML Agent
-        public override void AgentAction(float[] actions, string textAction)
+        public override void AgentAction(float[] actions)
         {
             // This example only uses continuous space
-            if (brain.brainParameters.vectorActionSpaceType != SpaceType.continuous)
+            if (behaviorParams.brainParameters.vectorActionSpaceType != SpaceType.Continuous)
             {
                 Debug.LogError("Must be continuous state type");
                 return;

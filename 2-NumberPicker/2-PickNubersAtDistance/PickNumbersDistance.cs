@@ -36,7 +36,7 @@ public class PickNumbersDistance : Agent {
         }
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         // Which is best? beats me, let's track
         var max = float.NegativeInfinity;

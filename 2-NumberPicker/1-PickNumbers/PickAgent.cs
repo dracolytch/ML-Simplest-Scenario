@@ -26,13 +26,13 @@ public class PickAgent : Agent {
         }
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         // Boolean reward
-        var choice = (int)vectorAction[0];
+        var choice = (int)(vectorAction[0] * 10f);
         var rew = 0f;
         if (choice == 1f) rew = 1f;
-        Debug.Log("Reward:" + rew);
+        Debug.Log(rew);
         AddReward(rew);
         numbers = Shuffle(numbers); // shuffle test
     }

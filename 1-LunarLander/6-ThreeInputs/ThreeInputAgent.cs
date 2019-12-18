@@ -29,10 +29,12 @@ public class ThreeInputAgent : Agent
     public UnityEvent OnReset = new UnityEvent();
 
     Rigidbody MarkerRigidBody;
+    BehaviorParameters behaviorParams;
 
     private void Start()
     {
         MarkerRigidBody = Marker.GetComponent<Rigidbody>();
+        behaviorParams = GetComponent<BehaviorParameters>();
     }
 
     // How to reinitialize when the game is reset. The Start() of an ML Agent
@@ -65,13 +67,13 @@ public class ThreeInputAgent : Agent
     }
 
     // What to do every step. The Update() of an ML Agent
-    public override void AgentAction(float[] actions, string textAction)
+    public override void AgentAction(float[] actions)
     {
         ignoreInputCount--;
         if (ignoreInputCount >= 0) return;
 
         // This example only uses continuous space
-        if (brain.brainParameters.vectorActionSpaceType != SpaceType.continuous)
+        if (behaviorParams.brainParameters.vectorActionSpaceType != SpaceType.Continuous)
         {
             Debug.LogError("Must be continuous state type");
             return;

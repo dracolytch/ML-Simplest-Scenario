@@ -12,7 +12,7 @@ public class ViewAgent : Agent
         AgentReset();
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         var discreteAction = (int)vectorAction[0];
         //Debug.Log(discreteAction);

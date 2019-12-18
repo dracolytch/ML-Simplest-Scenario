@@ -28,7 +28,7 @@ public class GradientObservation2DAgent : Agent {
         Target.transform.position = Marker.transform.parent.position + new Vector3(Random.Range(WidthMinMax.x, WidthMinMax.y), Marker.transform.position.y, 0);
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         var action = Mathf.Clamp(vectorAction[0], -1f, 1f);
         if (debug) Debug.Log("action: " + action);

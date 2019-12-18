@@ -13,13 +13,16 @@ public class GravityAgentContinuous : Agent
     public float MinRewardDistance = 0.1f;
     public float MaxRewardDistance = 1f;
     public float OnMarkerPoints = 0.1f;
+    public float DistanceMultiplier = 10f;
     public bool Visualize = true;
 
     Rigidbody MarkerRigidBody;
+    BehaviorParameters behaviorParams;
 
     private void Start()
     {
         MarkerRigidBody = Marker.GetComponent<Rigidbody>();
+        behaviorParams = GetComponent<BehaviorParameters>();
     }
 
     // How to reinitialize when the game is reset. The Start() of an ML Agent
@@ -54,10 +57,10 @@ public class GravityAgentContinuous : Agent
 
 
     // What to do every step. The Update() of an ML Agent
-    public override void AgentAction(float[] actions, string textAction)
+    public override void AgentAction(float[] actions)
     {
         // This example only uses continuous space
-        if (brain.brainParameters.vectorActionSpaceType != SpaceType.continuous)
+        if (behaviorParams.brainParameters.vectorActionSpaceType != SpaceType.Continuous)
         {
             Debug.LogError("Must be continuous state type");
             return;
@@ -79,6 +82,8 @@ public class GravityAgentContinuous : Agent
     {
         var distance = Mathf.Clamp(Mathf.Abs(markerY - targetY), MinRewardDistance, MaxRewardDistance); // clamp from 0.1 to 1 so the math works
 
-        return OnMarkerPoints / ((10f * distance) * (10f * distance));
+        var dist = DistanceMultiplier * distance;
+
+        return OnMarkerPoints / (dist * dist);
     }
 }

@@ -11,7 +11,7 @@ public class RandomAgent : Agent {
         AddVectorObs(Random.Range(0f, 1f));
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         using (var sw = File.AppendText("actions.txt"))
         {

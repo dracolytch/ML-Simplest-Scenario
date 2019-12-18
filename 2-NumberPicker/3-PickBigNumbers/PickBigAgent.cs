@@ -31,7 +31,7 @@ public class PickBigAgent : Agent {
         }
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         // Boolean reward
 

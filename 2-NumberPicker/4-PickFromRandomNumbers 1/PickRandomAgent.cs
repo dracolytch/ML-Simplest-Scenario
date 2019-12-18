@@ -25,7 +25,7 @@ public class PickRandomAgent : Agent {
         }
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         var choice = (int)vectorAction[0];
         var rew = 0f;

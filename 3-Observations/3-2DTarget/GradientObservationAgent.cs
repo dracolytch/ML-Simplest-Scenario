@@ -40,7 +40,7 @@ public class GradientObservationAgent : Agent
         currentStep = 0;
     }
 
-    public override void AgentAction(float[] vectorAction, string textAction)
+    public override void AgentAction(float[] vectorAction)
     {
         currentStep++;
         var action = new Vector3(Mathf.Clamp(vectorAction[0], -1f, 1f), 0, Mathf.Clamp(vectorAction[1], -1f, 1f));
