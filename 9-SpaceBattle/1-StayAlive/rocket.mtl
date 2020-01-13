@@ -1,0 +1,22 @@
+
+newmtl StandardA395C4
+Kd  0.6392157 0.58431376 0.76862744
+Ks  00 00 00
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+
+
+
+
+newmtl Standard51887C
+Kd  0.31764704 0.5333334 0.48627456
+Ks  00 00 00
+Ka  00 00 00
+d  01
+Ns  00
+illum 2
+
+
+
